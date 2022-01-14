@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: hsl(225, 100%, 94%);
+    }
+    .container{
+      position: absolute;
+      width: 450px;
+      /* margin-top: 1px; */
+      /* margin-left: 35%; */
+      left:50%;
+      margin-left:-226.5px;
+      border-radius: 30px;
+      text-align: center; 
+      background-color: white;
+      height: 695px;
+    }
+    /* .container {
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:453px;
+    margin-left:-226.5px;
+    height: 696px;
+    margin-top:-348px;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    } */
+    .plan{
+      margin-left: 60px;
+      width: 330px;
+      height: 92px;
+      border-radius: 20px;
+      background-color: hsl(225, 100%, 98%);
+      
+    }
+    .img1{
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    .img2{
+      padding: 20px;
+      float: left;
+    }
+    .button1{
+      border: none;
+      position: relative;
+      background: transparent;
+      color: hsl(245, 75%, 52%);
+      font-size: 16px;
+      font-weight: bold;
+      top: 17%;
+      /* font-family: 'Red Hat Display', sans-serif; */
+      font-family: 'Times New Roman', Times, serif;
+
+
+    }
+    .button1 a{
+      color: hsl(224, 23%, 55%);
+    }
+    .ptp{
+      border: none;
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      position: relative;
+      top: 5%;
+      width: 330px;
+      height: 45px;
+      border-radius: 10px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div >
+      <img class="img1" src="./images/illustration-hero.svg" alt="happi">
+    </div>
+    
+    <div>
+      <h1>Order Summary</h1>
+
+      <p style=" color: rgb(124, 121, 121);">You can now listen to millions of songs,<br> audiobooks, and podcasts on any device <br>anywhere you like!</p>    
+    </div>
+    <div class="plan">
+      <img src="./images/icon-music.svg" class="img2" alt="music">
+
+      <h3 style="float: left;">Annual Plan</h3> 
+      <div style="color: gray; position: relative; top: 50%; left: -135px; ">$59.99/year</div>
+      <button class="button1">Change</button> 
+
+    </div>
+    
+    <button class="ptp">Proceed to Payment</button>
+    <div style="position: relative; top: 10%; color: gray; font-weight: bold;">Cancel Order </div>
+    
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Siddhi Singh</a>.
+  </div>
+</body>
+</html>
